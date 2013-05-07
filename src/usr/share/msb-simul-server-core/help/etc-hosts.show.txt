@@ -1,0 +1,3 @@
+This command lists the domains added to the /etc/hosts file. Synopsis:{br}
+{program} etc-hosts -show
+

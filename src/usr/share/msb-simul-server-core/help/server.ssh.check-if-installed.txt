@@ -1,0 +1,4 @@
+This command checks if the openssh-server package has been installed previously. Synopsis:{br}
+{program} server.ssh -check-if-installed{br}
+The command outputs 'yes' if this is the case and 'no' if it isn't.
+

@@ -1,0 +1,9 @@
+[[etc-hosts]]
+Use this object path to manage the entire collection of simulation domains in the /etc/hosts file.
+
+[[etc-hosts.domain]]
+Use this object path to add or delete an individual simulation domain in the /etc/hosts file.
+
+[[server.ssh]]
+Use this object path to install, uninstall, or verify the installation of the local openssh-server.
+

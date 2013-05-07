@@ -1,0 +1,3 @@
+This command installes the openssh-server package on your system. You must be root or have sudoers privileges to execute it. Synopsis:{br}
+sudo {program} server.ssh -install
+

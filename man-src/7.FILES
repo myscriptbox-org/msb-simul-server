@@ -1,0 +1,3 @@
+[[/etc/hosts]]
+The system will query this file before querying a remote DNS resolver to discover the IP address associated to a particular domain. We add the simulation domains to this file to give the impression that we are querying a remote server, while in fact the server is our own local machine.
+

@@ -1,0 +1,3 @@
+This command deletes a domain from the /etc/hosts file. You must be root or else have sudo privileges to execute this command. Example:{br}
+sudo {program} etc-hosts.domain mytestdomain.com -delete
+
