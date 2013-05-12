@@ -32,6 +32,11 @@ shows the program's license.
 This command lists the domains added to the /etc/hosts file. Synopsis:  
 **msb-simul-server** etc-hosts -show
 
+### etc-hosts.domain [obj] -exists
+This command checks if a simulation domain has been registered in /etc/hosts. Example:  
+**msb-simul-server** etc-hosts.domain packages.garagesoft.com -exists  
+This command outputs 'yes' if the simulation domain exists and 'no' if it doesn't.
+
 ### etc-hosts.domain [obj] -delete
 This command deletes a domain from the /etc/hosts file. You must be root or else have sudo privileges to execute this command. Example:  
 sudo **msb-simul-server** etc-hosts.domain mytestdomain.com -delete
@@ -72,5 +77,4 @@ Erik Poupaert <erik@sankuru.biz>
 Report bugs to: erik@sankuru.biz
 
 # COPYRIGHT
-Licensed under GPL
-folder/generate-readme-stdout executed.
+Licensed under: GPL
