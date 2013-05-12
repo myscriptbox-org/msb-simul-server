@@ -1,3 +1,4 @@
 show
 check-if-installed
+exists
 

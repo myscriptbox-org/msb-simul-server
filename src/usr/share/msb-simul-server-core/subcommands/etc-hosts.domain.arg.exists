@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+#-------------------------------------------------------
+# Written by Erik Poupaert
+# Phnom Penh, Cambodia, May 2013
+# Licensed under the General Public License (GPL)
+#-------------------------------------------------------
+
+source "$UTIL_FOLDER/args.fix-whitespace"
+domain="$1"
+result=$(cat /etc/hosts | grep -P "127.0.0.1 	$domain  # msb-simul-server")
+if [ "$result" = "" ] ; then
+        echo 'no'
+else
+        echo 'yes'
+fi
+
+

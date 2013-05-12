@@ -1,0 +1,4 @@
+This command checks if a simulation domain has been registered in /etc/hosts. Example:{br}
+{program} etc-hosts.domain packages.garagesoft.com -exists{br}
+This command outputs 'yes' if the simulation domain exists and 'no' if it doesn't.
+
