@@ -32,11 +32,6 @@ shows the program's license.
 This command lists the domains added to the /etc/hosts file. Synopsis:  
 **msb-simul-server** etc-hosts -show
 
-### etc-hosts.domain [obj] -exists
-This command checks if a simulation domain has been registered in /etc/hosts. Example:  
-**msb-simul-server** etc-hosts.domain packages.garagesoft.com -exists  
-This command outputs 'yes' if the simulation domain exists and 'no' if it doesn't.
-
 ### etc-hosts.domain [obj] -delete
 This command deletes a domain from the /etc/hosts file. You must be root or else have sudo privileges to execute this command. Example:  
 sudo **msb-simul-server** etc-hosts.domain mytestdomain.com -delete
@@ -45,9 +40,10 @@ sudo **msb-simul-server** etc-hosts.domain mytestdomain.com -delete
 This command adds a domain to the /etc/hosts file. You must be root or have sudo privileges to execute it. Example:  
 sudo **msb-simul-server** etc-hosts.domain mytestdomain.org -add
 
-### server.ssh -uninstall
-This command uninstalls the openssh-server package. You must be root or have sudo privileges to execute it. Synopsis:  
-sudo **msb-simul-server** server.ssh -uninstall
+### etc-hosts.domain [obj] -exists
+This command checks if a simulation domain has been registered in /etc/hosts. Example:  
+**msb-simul-server** etc-hosts.domain packages.garagesoft.com -exists  
+This command outputs 'yes' if the simulation domain exists and 'no' if it doesn't.
 
 ### server.ssh -install
 This command installes the openssh-server package on your system. You must be root or have sudoers privileges to execute it. Synopsis:  
@@ -57,6 +53,10 @@ sudo **msb-simul-server** server.ssh -install
 This command checks if the openssh-server package has been installed previously. Synopsis:  
 **msb-simul-server** server.ssh -check-if-installed  
 The command outputs 'yes' if this is the case and 'no' if it isn't.
+
+### server.ssh -uninstall
+This command uninstalls the openssh-server package. You must be root or have sudo privileges to execute it. Synopsis:  
+sudo **msb-simul-server** server.ssh -uninstall
 
 ## EXIT-STATUS 
 ### 0
