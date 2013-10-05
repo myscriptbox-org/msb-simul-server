@@ -4,7 +4,7 @@
 # Phnom Penh, Cambodia, May 2013
 # Licensed under the General Public License (GPL)
 #-------------------------------------------------------
-
+source "$UTIL_FOLDER/msb.debug"
 while read ipaddress domain comment; do
         if [ "$ipaddress" = "127.0.0.1" ] ; then
                 echo "$domain"

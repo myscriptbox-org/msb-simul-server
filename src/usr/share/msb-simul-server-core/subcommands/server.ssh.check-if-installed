@@ -4,6 +4,7 @@
 # Phnom Penh, Cambodia, May 2013
 # Licensed under the General Public License (GPL)
 #-------------------------------------------------------
+source "$UTIL_FOLDER/msb.debug"
 result=$(dpkg-query --list openssh-server 2> /dev/null | tail -n+6)
 read installed packageFound version name <<< "$result"
 if [ "$installed" = "ii" ] && [ "openssh-server" = "$packageFound" ] ; then
